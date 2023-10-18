@@ -6,22 +6,22 @@
 
 
 Basics of Programming in JavaScript
-* Hello world program
-* Declare variable using var
-* More about variable
-* Let
-* Const
-* String Indexing
-* Useful string methods
-* Template Strings
-* Null, undefined, BigInt, typeof
-* Booleans and Comparison Operator
-* Truthy and Falsy Values
-* If else statement
-* Ternary Operator
-* && || operator
-* Nested if else
-* If elseif else
+* Hello world program -done 
+* Declare variable using var -done
+* More about variable -done
+* Let -done
+* Const -done
+* String Indexing  -done
+* Useful string methods -done
+* Template Strings -done
+* Null, undefined, BigInt, typeof -done
+* Booleans and Comparison Operator -done
+* Truthy and Falsy Values -done
+* If else statement -done
+* Ternary Operator -done
+* && || operator -done
+* Nested if else -done
+* If elseif else -done
 * Switch statement
 * While loop 
 * While loop examples
