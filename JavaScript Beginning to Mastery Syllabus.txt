@@ -28,13 +28,13 @@ Basics of Programming in JavaScript
 * For loop -done
 * For loop examples -done
 * Break and continue keyword -done
-* Do while loop
+* Do while loop -done
 Arrays in JavaScript
-* Intro to arrays
-* Push pop shift unshift
-* Primitive vs reference data types
-* Clone array & spread operator
-* For loop
+* Intro to arrays -done 
+* Push pop shift unshift -done
+* Primitive vs reference data types -done
+* Clone array & spread operator -done
+* For loop 
 * use const for creating arrays
 * While loop in array
 * For of loop
