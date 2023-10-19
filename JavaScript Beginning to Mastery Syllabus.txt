@@ -22,12 +22,12 @@ Basics of Programming in JavaScript
 * && || operator -done
 * Nested if else -done
 * If elseif else -done
-* Switch statement
-* While loop 
-* While loop examples
-* For loop
-* For loop examples
-* Break and continue keyword
+* Switch statement -done
+* While loop -done
+* While loop examples -done
+* For loop -done
+* For loop examples -done
+* Break and continue keyword -done
 * Do while loop
 Arrays in JavaScript
 * Intro to arrays
