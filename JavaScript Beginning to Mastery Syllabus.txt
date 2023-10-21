@@ -43,9 +43,9 @@ Arrays in JavaScript
 
 
 Objects in JavaScript
-* Intro to objects
-* Dot vs Bracket Notation
-* Iterate objects
+* Intro to objects -done
+* Dot vs Bracket Notation -done
+* Iterate objects -done
 * Computed properties
 * Spread operator in objects
 * Object Destructuring

@@ -21,7 +21,7 @@ const myArray = ["value1", "value2", "value3", "value4"];
 
 // we can add the remaining items in new array;
 
-let[var1, var2, ...myNewArray] = myArray;
-console.log(`value of var1 is ${var1}`);
-console.log(`value of var2 is ${var2}`);
-console.log(`My new array is ${myNewArray}`)
+// let[var1, var2, ...myNewArray] = myArray;
+// console.log(`value of var1 is ${var1}`);
+// console.log(`value of var2 is ${var2}`);
+// console.log(`My new array is ${myNewArray}`)
