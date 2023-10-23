@@ -54,12 +54,12 @@ Objects in JavaScript
 
 
 Functions in JavaScript
-* Function declaration
-* Function Expression
-* Arrow Functions
-* Function declarations are hoisted  (covered in great detail , later in this course)
-* Function inside function
-* Lexical Scope
+* Function declaration -done
+* Function Expression -done
+* Arrow Functions -done
+* Function declarations are hoisted  (covered in great detail , later in this course) -done
+* Function inside function -done
+* Lexical Scope -done
 * Block Scope Vs Function Scope
 * Default Parameters
 * Rest Parameters
