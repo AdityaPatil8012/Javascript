@@ -6,14 +6,14 @@
 
 // Value is not added to the variable 
 let firstName;
-console.log(firstName);
+console.log(typeof firstName);
 
 // value is added to the varible and the type is string;
-firstName = 'Aditya Patil';
-console.log(firstName, typeof firstName);
+// firstName = 'Aditya Patil';
+// console.log(firstName, typeof firstName);
 
 // the value of this variable is null;
 
-firstName = null;
-console.log(firstName, typeof firstName);
+// firstName = null;
+// console.log(firstName, typeof firstName);
 

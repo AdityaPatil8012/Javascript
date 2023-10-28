@@ -1,10 +1,10 @@
 // functions declaration in Javascript;
 
-// function happyBirthday() {
-//   console.log("happy birthday to you...")
-// }
+function happyBirthday() {
+  console.log("happy birthday to you...")
+}
 
-// happyBirthday();
+happyBirthday();
 
 // function happyBirthday2(){
 //   return "happy birthday to you Aditya"

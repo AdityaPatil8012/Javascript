@@ -3,7 +3,7 @@
 const fruits = ["Apple", "mango", "grapes"];
 
 let i = 0;
-while(i <= fruits.length-1){
+while(i <fruits.length){
   console.log(fruits[i].toUpperCase());
   i++;
 } 
