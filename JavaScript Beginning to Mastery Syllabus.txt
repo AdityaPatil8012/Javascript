@@ -68,17 +68,17 @@ Functions in JavaScript
 * Functions returning Functions  -done
 
 
-Very Important Array Methods
-* Foreach method
-* Map method
-* Filter
-* Reduce
-* Sort
-* Find
-* Every
-* Some
-* Fill method
-* Splice method
+Very Important Array Methods, we have to remember their use cases;  
+* Foreach method -done
+* Map method -done
+* Filter -done
+* Reduce -done
+* Sort -done
+* Find -done
+* Every -done
+* Some -done
+* Fill method -done
+* Splice method -done
 
 
 
