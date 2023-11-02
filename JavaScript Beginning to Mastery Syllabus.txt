@@ -84,11 +84,11 @@ Very Important Array Methods, we have to remember their use cases;
 
 
 More useful things 
-* Iterables
-* Sets
-* Maps
-* Object.assign
-* Optional chaining
+* Iterables -done
+* Sets -done
+* Maps -done
+* Object.assign -done
+* Optional chaining -done
 
 
 
