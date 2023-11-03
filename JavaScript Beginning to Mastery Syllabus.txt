@@ -94,12 +94,12 @@ More useful things
 
 
 Object Oriented JavaScript / Prototypal Inheritance
-* Methods
-* This keyword, Window object
-* Call , apply and bind method
-* Some warnings
-* This inside arrow functions
-* Short syntax for methods
+* Methods -done
+* This keyword, Window object -done
+* Call , apply and bind method -done
+* Some warnings -done
+* This inside arrow functions -done
+* Short syntax for methods -done
 * Factory functions & discuss some memory related problems
 * First solution to that problem
 * Why that solution isn’t that great
