@@ -112,9 +112,9 @@ Object Oriented JavaScript / Prototypal Inheritance
 * Class keyword -done
 * Example using class keyword -done
 * Super keyword -done
-* Method overriding
-* Getters and setters
-* Static methods and properties
+* Method overriding -done
+* Getters and setters -done
+* Static methods and properties -done
 
 
 How JavaScript Works

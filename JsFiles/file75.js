@@ -34,9 +34,10 @@ class Dog extends Animal{
 }
 
 const tommy = new Dog('Tommy', 6, 8);
-console.log(tommy.run());
+// console.log(tommy.run());
 // console.log(tommy.eat());
 // console.log(tommy.sleeping());
+
 
 
 
