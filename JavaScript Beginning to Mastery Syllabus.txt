@@ -100,18 +100,18 @@ Object Oriented JavaScript / Prototypal Inheritance
 * Some warnings -done
 * This inside arrow functions -done
 * Short syntax for methods -done
-* Factory functions & discuss some memory related problems
-* First solution to that problem
-* Why that solution isn’t that great
-* What is __proto__ , [[prototype]]
-* What is prototype
-* Use prototype
-* New keyword
-* Constructor function with new keyword
-* More discussion about proto and prototype
-* Class keyword
-* Example using class keyword
-* Super keyword
+* Factory functions & discuss some memory related problems -done
+* First solution to that problem -done
+* Why that solution isn’t that great -done
+* What is __proto__ , [[prototype]] -done
+* What is prototype -done 
+* Use prototype -done
+* New keyword -done
+* Constructor function with new keyword -done
+* More discussion about proto and prototype -done
+* Class keyword -done
+* Example using class keyword -done
+* Super keyword -done
 * Method overriding
 * Getters and setters
 * Static methods and properties
