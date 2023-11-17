@@ -133,15 +133,15 @@ How JavaScript Works
 DOM Tutorial
 
 
-* HTML and CSS Crash course ( Around 30-40 minutes)
-* Async vs defer
-* Select elements using id
-* querySelector
-* textContent & innerText
-* Change the styles of elements using js
-* Get and set attributes
+* HTML and CSS Crash course ( Around 30-40 minutes) -done
+* Async vs defer -done
+* Select elements using id -done
+* querySelector -done
+* textContent & innerText -done
+* Change the styles of elements using js -done
+* Get and set attributes -done
 * Select multiple elements and loop through them
-* innerHTML
+* innerHTML -done
 * Deeply understand dom tree, root node , element nodes, text nodes
 * classList
 * Add new elements to page
