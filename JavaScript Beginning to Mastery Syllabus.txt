@@ -140,11 +140,11 @@ DOM Tutorial
 * textContent & innerText -done
 * Change the styles of elements using js -done
 * Get and set attributes -done
-* Select multiple elements and loop through them
+* Select multiple elements and loop through them -done
 * innerHTML -done
-* Deeply understand dom tree, root node , element nodes, text nodes
-* classList
-* Add new elements to page
+* Deeply understand dom tree, root node , element nodes, text nodes done-
+* classList -done 
+* Add new elements to page -done
 * Create elements
 * Insert adjacent elements
 * Clone nodes
