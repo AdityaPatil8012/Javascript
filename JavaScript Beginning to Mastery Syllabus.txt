@@ -150,7 +150,7 @@ DOM Tutorial
 * Clone nodes
 * More methods to add elements on page
 * How to get the dimensions of the element
-* Intro to events
+* Intro to events -done
 * This keyword inside eventListener callback
 * Add events on multiple elements
 * Event object
