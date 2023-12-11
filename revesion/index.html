@@ -3,8 +3,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>amazon.com</title>
+  <style>
+    .cart{
+      background-color: yellow;
+      font: bold;
+      color: black;
+    }
+
+    .buy{
+      background-color: orange;
+    }
+  </style>
 </head>
 <body>
+  <section>
+    <button onclick="alert('hello Javascript')">
+      Click
+    </button>
+    <button>
+      Aditya
+    </button>
+    <button>
+      vada-pav
+    </button>
   
+    <p>
+      Hello, World!
+    </p>
+    <p>
+      Today I started the revision of Javascript;
+    </p>
+  </section>
+  <section>
+    <button class="cart">
+      Add to cart
+    </button>
+    <button class="buy">
+      buy now
+    </button>
+  </section>
+  <section>
+    <script>
+      const firstName = 'Aditya';
+      console.log(firstName);
+      console.log(typeof firstName);
+      console.log(`My name is ${firstName}`);
+    </script>
+  </section>
+  <section>
+    <script>
+      let coffee = 5;
+      let bagel = 6;
+      let soup = 9;
+
+
+      const total = coffee + bagel + soup;
+      const taxAmount = total*0.1;
+      const withTax = (total*0.1)+total;
+      
+      console.log(`Cost is ${total}`);
+      console.log('tax is '+ taxAmount);
+      console.log(`Total Cost with tax is ${withTax}`);
+    </script>
+  </section>
 </body>
 </html>

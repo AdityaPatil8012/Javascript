@@ -1,0 +1,46 @@
+Lessons:
+0:00 Intro -done
+1:47 1. JavaScript Basics -done
+14:51 2. Numbers and Math -done
+45:25 3. Strings -done
+1:11:30 4. HTML CSS Review, console.log -done
+1:56:35 5. Variables -done
+2:42:30 6. Booleans and If-Statements -done
+3:49:51 7. Functions -done
+4:34:44 8. Objects -done
+5:51:43 9. Document Object Model (DOM)
+7:12:03 10. HTML, CSS, and JavaScript Together
+8:21:19 11. Arrays and Loops
+9:26:38 11 (Part 2). Arrays and Loops
+10:16:22 12. Advanced Functions
+11:02:26 12 (Part 2). Advanced Functions
+11:55:49 Projects and Ending
+
+0:00 Intro to the Amazon Project
+7:04 Intro to Git
+15:56 Create the list of products
+22:36 Save the data
+32:53 Generate the HTML
+49:08 Add more products
+57:04 Add products to cart
+1:10:31 Combine the cart quantities
+1:19:29 Make the cart quantity interactive
+1:27:18 Exercises
+
+14:15 Use modules in the Amazon project
+26:34 Create the checkout page
+35:46 Generate the HTML
+49:20 Fix price formatting and radio selectors
+1:03:21 Make the checkout page interactive
+1:20:22 Save cart in localStorage
+1:27:38 Exercises
+
+0:00 Intro to external libraries
+5:35 DayJS external library
+14:39 External libraries + JavaScript modules
+21:50 Start the delivery options
+46:46 Make delivery options interactive
+1:00:14 MVC = Model, View, Controller
+1:03:18 Start the payment summary
+1:29:45 Use MVC in payment summary
+1:36:00 Exercises
