@@ -142,7 +142,7 @@ DOM Tutorial
 * Get and set attributes -done
 * Select multiple elements and loop through them -done
 * innerHTML -done
-* Deeply understand dom tree, root node , element nodes, text nodes 
+* Deeply understand dom tree, root node , element nodes, text nodes -done
 * classList -done 
 * Add new elements to page -done
 * Create elements
@@ -151,10 +151,10 @@ DOM Tutorial
 * More methods to add elements on page
 * How to get the dimensions of the element
 * Intro to events -done
-* This keyword inside eventListener callback -done
+* This keyword inside eventListener callback -done 
 * Add events on multiple elements -done
-* Event object
-* How event listener works
+* Event object -done
+* How event listener works -done
 * Practice with events
 * Create demo project
 * More events
@@ -167,19 +167,19 @@ DOM Tutorial
 Asynchronous JavaScript
 * Is Javascript a synchronous or asynchronous programming language ?  -done
 * SetTimeout() -done
-* SetTimeout() with 0 millisecond -done
-* Callback Queue
-* SetInterval and create little project with setInterval
-* Understand callbacks in general
-* Callbacks in asynchronous programming 
-* Callback Hell and Pyramid of doom
-* Intro to promises
-* Microtask Queue
-* Function that returns promise
-* Promise and settimeout
-* Promise.resolve and more about then method
+* SetTimeout() with 0 millisecond  -done
+* Callback Queue -done
+* SetInterval and create little project with setInterval -done
+* Understand callbacks in general -done
+* Callbacks in asynchronous programming -done 
+* Callback Hell and Pyramid of doom -done
+* Intro to promises -done
+* Microtask Queue -done
+* Function that returns promise -done
+* Promise and settimeout -done
+* Promise.resolve and more about then method 
 * Convert nested Callbacks to flat code using promises
-* Intro to Ajax, HTTP Request
+* Intro to Ajax, HTTP Request -done
 * XHR requests
 * Error handling in XHR requests
 * XHR request Chaining 

@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables</title>
+</head>
+<body>
+  <header>
+
+  </header>
+  <main>
+    <h1 class="cart-quantity">
+      Cart Quantity
+    </h1>
+    <section class="buttons">
+      <button onclick="
+          let quantity = total;
+          console.log('Show Quantity '+quantity);
+        " class="show-quantity">
+        Show Quantity
+      </button>
+      <button onclick="
+        total = total +1;
+        quantity = total;
+        console.log('Show Quantity '+quantity);
+       " class="Add-to-cart">
+        Add to cart
+      </button>
+      <button onclick="
+      total = total +2;
+      quantity = total;
+      console.log('Show Quantity '+quantity);
+     ">
+        +2
+      </button>
+      <button onclick="
+      total = total +3;
+      quantity = total;
+      console.log('Show Quantity '+quantity);
+     ">+3</button>
+      <button onclick="
+        total = 0;
+        quantity = total;
+        console.log('Reset the cart: '+quantity);
+       ">Reset Cart</button>
+    </section>
+    <script>
+      let total = 0;
+    </script>
+  </main>
+</body>
+</html>

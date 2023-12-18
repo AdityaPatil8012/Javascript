@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coin-Flip-Game</title>
+</head>
+<body>
+  <header>
+    <h1 class="heading">
+      Coin Flipping game.
+    </h1>
+  </header>
+  <main>
+    <section>
+      <button onclick="
+        let randomMove = Math.random();
+        if(randomMove >= 0 && randomMove < 1/2){
+          randomMove = 'heads';
+        }else if(randomMove>=1/2 && randomMove <1){
+          randomMove = 'tails';
+        }
+        let computerMove = randomMove;
+        let result = '';
+        if(computerMove === 'heads'){
+          result = 'Your Win!!';
+        }else{
+          result = 'You lose!!';
+        }
+
+        console.log(`Your move is Heads. Computer's move is ${computerMove}. Result is ${result}`);
+        ">Heads</button>
+      <button onclick="
+      let randomMove = Math.random();
+      if(randomMove >= 0 && randomMove < 1/2){
+        randomMove = 'heads';
+      }else if(randomMove>=1/2 && randomMove <1){
+        randomMove = 'tails';
+      }
+      let computerMove = randomMove;
+      let result = '';
+      if(computerMove === 'heads'){
+        result = 'Your lose!!';
+      }else{
+        result = 'You Win!!';
+      }
+
+      console.log(`Your move is Tails. Computer's move is ${computerMove}. Result is ${result}`);
+      ">Tails</button>
+    </section>
+  </main>
+  <footer>
+    <script>
+
+    </script>
+  </footer>
+</body>
+</html>
