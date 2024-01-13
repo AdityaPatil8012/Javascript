@@ -8,7 +8,7 @@ Lessons:
 2:42:30 6. Booleans and If-Statements -done
 3:49:51 7. Functions -done
 4:34:44 8. Objects -done
-5:51:43 9. Document Object Model (DOM)
+5:51:43 9. Document Object Model (DOM) -done
 7:12:03 10. HTML, CSS, and JavaScript Together
 8:21:19 11. Arrays and Loops
 9:26:38 11 (Part 2). Arrays and Loops

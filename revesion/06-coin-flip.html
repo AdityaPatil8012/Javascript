@@ -13,44 +13,51 @@
   <main>
     <section>
       <button onclick="
+        computersMove();
+        playerMove('heads');
+        ">Heads
+      </button>
+
+      <button onclick="
+      computerMove();
+      playerMove('tails');
+      ">Tails</button>
+
+    </section>
+  </main>
+  <footer>
+    <script>
+      function computersMove(){
+        let computerMove = '';
         let randomMove = Math.random();
         if(randomMove >= 0 && randomMove < 1/2){
           randomMove = 'heads';
         }else if(randomMove>=1/2 && randomMove <1){
           randomMove = 'tails';
         }
-        let computerMove = randomMove;
-        let result = '';
-        if(computerMove === 'heads'){
-          result = 'Your Win!!';
-        }else{
-          result = 'You lose!!';
+        computerMove = randomMove;
+        return computerMove;
         }
 
-        console.log(`Your move is Heads. Computer's move is ${computerMove}. Result is ${result}`);
-        ">Heads</button>
-      <button onclick="
-      let randomMove = Math.random();
-      if(randomMove >= 0 && randomMove < 1/2){
-        randomMove = 'heads';
-      }else if(randomMove>=1/2 && randomMove <1){
-        randomMove = 'tails';
-      }
-      let computerMove = randomMove;
-      let result = '';
-      if(computerMove === 'heads'){
-        result = 'Your lose!!';
-      }else{
-        result = 'You Win!!';
-      }
+      function playerMove(playersMove){
+        let result = '';
 
-      console.log(`Your move is Tails. Computer's move is ${computerMove}. Result is ${result}`);
-      ">Tails</button>
-    </section>
-  </main>
-  <footer>
-    <script>
+        if(playersMove === 'tails'){
+          if(computerMove === 'heads'){
+          result = 'Your lose!!';
+          }else{
+            result = 'You Win!!';
+          }
+        }else if(playersMove === 'heads'){
+          if(computerMove === 'heads'){
+            result = 'Your Win!!';
+          }else{
+            result = 'You lose!!';
+          }
+        }
 
+        console.log(`Your move is ${playersMove}. Computer's move is ${computerMove}. Result is ${result}`);
+      }
     </script>
   </footer>
 </body>

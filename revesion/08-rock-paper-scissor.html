@@ -3,36 +3,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock-Paper-Scissor</title>
+    <style>
+
+      body{
+        color: white;
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0;
+        margin: 0;
+      }
+
+      .heading{
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .Rock-Paper-Scissor{
+        margin:20px 50px;
+      }
+
+      .make-move{
+        height: 50px;
+        background-color: transparent;
+      }
+
+      .move-button{
+        background-color: transparent;
+        border: 2px solid white;
+        padding: 15px;
+        border-radius: 100%;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <section class="Rock-Paper-Scissor">
       <h1 class="heading">Rock-Paper-Scissor</h1>
       <button
-        class="rock"
+        class="rock move-button"
         onclick="
       playGame('rock');
     "
       >
-        Rock
+        <img class="make-move" src="icons/rock-emoji.png" alt="rock">
       </button>
 
       <button
-        class="paper"
+        class="paper move-button"
         onclick="
       playGame('paper');
   "
       >
-        Paper
+        <img class="make-move" src="icons/paper-emoji.png" alt="paper">
       </button>
 
       <button
-        class="scissor"
+        class="scissor move-button"
         onclick="
       playGame('scissor');
   "
       >
-        Scissor
+        <img class="make-move" src="icons/scissors-emoji.png" alt="scissor">
       </button>
+      <p class="js-result"></p>
+      <p class="js-moves"></p>
+      <p class="js-score"></p>
 
       <button
         onclick="
@@ -40,7 +76,6 @@
         score.losses = 0;
         score.ties = 0;
         localStorage.removeItem('score');
-        alert('We have reset the score');
       "
       >
         reset
@@ -56,6 +91,8 @@
             ties: 0,
           };
         }
+        updateTheScore();
+
         function playGame(playerMove) {
           const computerMove = pickComputerMove();
           let result = " ";
@@ -70,7 +107,7 @@
             }
           } else if (playerMove === "paper") {
             if (computerMove === "rock") {
-              result = "You Win!!";
+              result = "You Win!!!";
             } else if (computerMove === "paper") {
               result = "tie";
             } else if (computerMove === "scissor") {
@@ -94,12 +131,30 @@
             score.ties += 1;
           }
           localStorage.setItem("score", JSON.stringify(score));
-
-          alert(
-            `Your move is ${playerMove}. Computer's move is ${computerMove}. And Result is ${result}.
-wins: ${score.wins} losses: ${score.losses} ties: ${score.ties}`
-          );
+          
+          updateTheScore();
+          document.querySelector('.js-result').innerHTML = `Result is ${result}`;
+          document.querySelector('.js-moves').innerHTML = `Your move is ${playerMove}. Computer's move is ${computerMove}`;
+          
+//           alert(
+//             `Your move is ${playerMove}. Computer's move is ${computerMove}. And Result is ${result}.
+// wins: ${score.wins} losses: ${score.losses} ties: ${score.ties}`
+//           );
+          
         }
+
+        function updateTheScore(){
+          document.querySelector('.js-score').innerHTML = `wins: ${score.wins} losses: ${score.losses} ties: ${score.ties}`;
+        }
+
+        function result(){
+          document.querySelector('.js-result').innerHTML = `Result is ${result}`;
+        }
+
+        function moves(){
+          document.querySelector('.js-moves').innerHTML = `Your move is ${playerMove}. Computer's move is ${computerMove}`;
+        }
+
         function pickComputerMove() {
           let computerMove = "";
           let randomMove = Math.random();

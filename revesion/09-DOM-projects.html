@@ -3,18 +3,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM</title>
+    <style>
+      .sub-button{
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        font-size: medium;
+        border: none;
+        padding: 15px 15px;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: color;
+      }
+      .sub-button:hover{
+        background-color: rgba(0, 0, 0, 0.829);
+      }
+
+      .is-sub{
+        background-color: rgb(215, 215, 215);
+        color: black;
+      }
+
+    
+    </style>
   </head>
   <body>
     <section>
       <h1>YouTube Subscribe Button</h1>
       <button
-        class="js-sub-button"
+        class="js-sub-button sub-button"
         onclick="
         Subscribe();
     "
       >
         Subscribe
       </button>
+
     </section>
     <section class="js-amazon-calculator">
       <h2 class="heading">Amazon Shipping Calculator</h2>
@@ -55,8 +79,11 @@
       const subButton = document.querySelector(".js-sub-button");
       if (subButton.innerText === "Subscribe") {
         subButton.innerHTML = "Subscribed";
+        subButton.classList.add('is-sub');
       } else {
         subButton.innerHTML = "Subscribe";
+        subButton.classList.remove('is-sub');
+        subButton.classList.remove('sub-button:hover');
       }
     }
   </script>
