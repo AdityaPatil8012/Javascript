@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create new element</title>
+  <style>
+    body{
+      background-color: #2f2f2f;
+      color: white;
+    }
+    .container{
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="day">Monday</div>
+    <div class="day">Tuesday</div>
+    <div class="day">Wednesday</div>
+    <div class="day">Thursday</div>
+  </div>
+</body>
+<script>
+  // how to access the element using querySelector;
+  const parent =  document.querySelector(".container");
+  console.log(parent);
+
+  // how to accesss the child element:
+  // this is also called traversing;
+  console.log(parent.children);// this will print htmlCollection; 
+
+  // this is how we can implement loop to childElements;
+  // here parent.children.lenght will give us the lenght;
+  for(let i = 0; i < parent.children.length; i++){
+    // this is how we can print by accessing children of the parent;
+    console.log(parent.children[i].innerHTML)
+  }
+
+  // this is how we can access the childElements independently;
+  // it is similar to the array elements;
+  parent.children[2].style.color = "orange";
+
+  // how to access the first child;
+  parent.firstElementChild.style.color = "yellow";
+
+  // how to access the last child;
+  parent.lastElementChild.style.color = "pink";
+
+  // select the child element;
+  const dayOne = document.querySelector(".day");
+  console.log(dayOne);
+  console.log(dayOne.parentElement);
+
+
+  // this is how we can access parentElement;
+  dayOne.parentElement.style.backgroundColor = "black";
+  console.log(dayOne.nextElementSibling);
+  dayOne.nextElementSibling.style.backgroundColor = "red";
+  console.log(parent.childNodes);
+
+  // creating new element using javascript;
+  const newDiv = document.createElement("div");
+  newDiv.className = "day";
+  newDiv.id = "friday";
+  // this is one of the way but it not optimised;
+  // newDiv.innerHTML = "Friday";
+
+  // this is another way;
+  const friday = document.createTextNode("Friday");
+  newDiv.appendChild(friday);
+  console.log(newDiv);
+
+  // now let's add this to contianer;
+  // append will add the new element at the bottom
+  parent.appendChild(newDiv);
+  // prepend will add the new element at the start;
+  // parent.prepend(newDiv)
+
+  // now I want to append this to body;
+
+  document.body.prepend(newDiv);
+
+</script>
+</html>
+
+<!-- new things that I learned in this 
+1. how to create a new element;
+2. how to add that new element to html using append and prepend;
+3. learned about traversing;
+4. how to access the child nodes and parent element's from the child element;
+5. how to access the next sibling element;
+6. how to access the first and the last element form the parent element; 
+-->

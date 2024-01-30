@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit and Remove Elements</title>
+    <style>
+      body{
+        background-color: #2f2f2f;
+        color: white;
+      }
+    </style>
+</head>
+<body>
+  <ul class="languages">
+    <li class="list-item">javascript</li>
+    <li class="list-item">html</li>
+    <li class="list-item">css</li>
+  </ul>
+</body>
+<script>
+  const container = document.querySelector(".languages");
+  console.log(container);
+
+
+  function addLang(lang){
+    const listItem = document.createElement("li");
+    listItem.className = "list-item";
+    const newLang = document.createTextNode(lang);
+    listItem.appendChild(newLang);
+    container.append(listItem);
+  }
+
+  addLang("python");
+  addLang("ruby");
+  addLang("elixer");
+
+  // edit element;
+  const secondLang = document.querySelector("li:nth-child(2)");
+  console.log(secondLang.innerHTML);
+  // now I want to change this to some other lang let's say java;
+  // secondLang.innerHTML = "java";// this is one of the ways there are more better ways to do the same;
+  
+  const java = document.createTextNode("java");
+  let newli = document.createElement("li");
+  newli.className = "list-item";
+  newli.appendChild(java)
+  // secondLang.append(java);
+  secondLang.replaceWith(newli);
+
+  // change the first item using outerHTML;
+  const firstLang = document.querySelector(".list-item");
+  // console.log(firstLang.innerHTML);
+  firstLang.outerHTML = '<li class="list-item">c++</li>';
+
+  // delete the element from the list;
+  const lastLang = document.querySelector("li:last-child");
+  // console.log(lastLang.innerHTML);
+  lastLang.remove(); 
+</script>
+</html>

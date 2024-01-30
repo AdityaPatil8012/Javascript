@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Access Practice</title>
+    <style>
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to DOM Access Practice</h1>
+
+    <p id="paragraph1">This is a paragraph with an <span class="highlight">highlighted</span> word.</p>
+
+    <ul>
+        <li class="list-item">Item 1</li>
+        <li class="list-item">Item 2</li>
+        <li class="list-item">Item 3</li>
+    </ul>
+
+    <form id="sampleForm">
+        <label for="inputText">Enter Text: </label>
+        <input type="text" id="inputText" name="inputText">
+        <button type="button" onclick="displayInputText()">Display Text</button>
+    </form>
+
+    <script>
+      // access paragraph using id;
+      let par = document.getElementById("paragraph1");
+      console.log(par);
+
+      // access list items by Class Name;
+      let list = document.getElementsByClassName("list-item");
+      console.log(list);
+
+      // access form and input field using id;
+      let form = document.getElementById("sampleForm");
+      let input = document.querySelector("#inputText");
+      console.log(form);
+      console.log(input);
+    </script>
+
+</body>
+</html>

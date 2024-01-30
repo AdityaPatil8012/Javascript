@@ -1,0 +1,70 @@
+<!-- events in javascript -->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>events in javascript</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <span class="container">
+    <button class="hello">Say Hello</button>
+  </span>
+  
+  <button class="Good-day">Say Good day</button>
+</body>
+
+<script>
+
+  document.querySelector(".hello").addEventListener("click",(e)=>{
+    // console.log(e);
+    alert("button is clicked");
+
+    // event object properties;
+    console.log(e.type);
+    console.log(e.target);
+
+  });
+
+  // now let's see how we can add and remove the event listners;
+
+  // select the button first;
+  const button = document.querySelector(".Good-day");
+  console.log(button);
+
+  // now lets create the function that will greet good day;
+
+  const greet = function(){
+    alert("Good Day");
+    button.removeEventListener("click", greet);
+  }
+
+  // now add this greet function to the button;
+  button.addEventListener("click", greet);
+
+  /*
+  Event types:
+
+  1. mouse events: click, mouseover/mouseout, mousedown/mouseup.
+  2. keyboard events: keydown/keyup;
+  3. form events: sumit event, input event;
+  4. document and window events: load, resize, scroll event;
+
+  Event Handling: 
+  To handle the event we attach event listener to an HTML element;
+
+
+  Event object: 
+  When an event occurs an event object is also created, this object contains information about
+  the event such as type of event, target element, and many more;
+
+
+  Preventing default behavior: 
+  Sometimes, you may want to prevent the default behavior associated with an event, 
+  such as preventing a form from being submitted or a link from being followed.
+  */
+</script>
+</html>
